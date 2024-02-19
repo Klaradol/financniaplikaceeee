@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finánční aplikace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <style> body{background-color: #FFEBCD };</style>
+    <h1 style="background-color:#DEB887; color:black;">Zadej měnu</h1>
+    <form action="index.html" method="post">
+        <label for="amount"> částka:</label>
+        <input type="number" id="amount" name="amount" required>
+        <label for="source_currency">Zdrojová měna:</label>
+        <select id="source_currency" name="source_currency">
+            <option value="CZK">CZK - Česká koruna</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="USD">USD - Americký dolar</option>
+            <option value="PLN">PLN - Złoty</option>
+            </select>
+        <label for="target_currency">Cílová měna:</label>
+        <select id="target_currency" name="target_currency">
+            <option value="CZK">CZK - Česká koruna</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="USD">USD - Americký dolar</option>
+            <option value="PLN">PLN - Złoty</option>
+            </select>
+        <button type="submit">Převést</button>
+    </form>
+</body>
+</html>
+
